@@ -1,8 +1,8 @@
 @media (max-width: 760px) {
-#tit1{
+.logo{
     display: none;
 }
-.nav{
+.navbar{
     display: flex;
     flex-direction: column;
 }

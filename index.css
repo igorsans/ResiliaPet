@@ -5,6 +5,7 @@
 :root{
     --cor1: black;
     --cor2: white;
+    --cor2a: #ffffff88;
     --cor3: #5656f8;
     --cor4: #97dbff;
     --cor5: #ff7f50;
@@ -13,9 +14,31 @@
     --fem: #e3aa95;
     --male: #438383;
 }
+
+/* font */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400&display=swap');
+@font-face {
+    font-family: 'Lobster';
+    src: url('fonts/Lobster-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+.logo{
+    font-family: 'Lobster', cursive;
+}
+.h2boxcp,.linksnav,.homenav,.tituloapadrinhar,.apadrinharp,.textovermelho,.finalfeliz,.botaofeliz,.botaoapadrinhar,.botaovermais1,.botaoajude{
+    font-family: 'Roboto', sans-serif;
+}
+.tituloadote,.fem,.masc,.footerpai{
+    font-family: 'Roboto Mono', monospace;
+}
+/* font */
+
 a{
     color: var(--cor2);
     text-decoration-line: none;
+    transition: 0.3s;
 }
 body{
     background-color: black;
@@ -35,7 +58,7 @@ header{
     top: 0; 
 }
 .header{
-    height: 55px;
+    height: 90px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.623);
     display: flex; /*transforma o header em um flex box para manipular o conteudo que está dentro */
@@ -48,32 +71,43 @@ header{
     gap: 40px; /*serve para dar espaço de um para o outro*/
     font-size: 1.4em;
 }
-.linksnav:hover{
+.homenav {
     color: var(--cor3);
 }
-.navgif{
-    height: 55px;
-}
-.botaonav{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.linksnav:hover{
+    color: var(--cor3);
+    transition: 0.3s;
 }
 .botaoajude{
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    width: 200px;
     background-color: var(--cor3);
-    padding: 18.1px 50px;
+    transition: 0.5s;
 }
 .botaoajude:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--cor6);
+    height: 90px;
+    width: 200px;
+    text-align: center;
+    transition: 0.5s;
 }
 .logo{
-    padding-left: 10px;
-    color: var(--cor3);
+    padding-left: 30px;
+    color: var(--cor2);
+    transition: 4s;
+    font-size: 4em;
 }
 .logo:hover{
-    transform: scale(1.2);
-    transition: 3s;
+    /* transform: scale(1.1); */
+    transition: 1s;
+    color: var(--cor3);
 }
 
 /* primeiro campo com conteudo */
@@ -110,19 +144,25 @@ header{
     align-items: center;
     width: 34.3%;
     height: 100%;
+    text-align: center;
 }
 .boxcp1{
-    background-color: var(--cor7);
+    background-color: var(--male);
 }
 .boxcp2{
-    background-color: var(--cor4);
+    background-color: var(--cor7);
 }
 .boxcp3{
-    background-color: var(--cor5);
+    background-color: var(--cor6);
 }
 .h2boxcp{
-    font-size: 3em;
+    font-size: 2.5em;
     padding-bottom: 15px;
+    transition: 0.3s;
+}
+.transparent:hover{
+    color: var(--cor2a);
+    transition: 0.3s;
 }
 /* Alguns animais para adoção */
 
@@ -238,6 +278,39 @@ h4{
 }
 .textovermelho > p{
     min-width: 800px;
+}
+
+/* final feliz */
+
+.finalfeliz{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.textofeliz{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--cor4);
+    max-height: 470px;
+    height: 470px;
+    width: 100%;
+}
+.lorefeliz{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imgfelizcont{
+    max-height: 470px;
+    height: 470px;
+}
+.caofeliz{
+    max-height: 470px;
+    height: 470px;
 }
 /* footer */
 
