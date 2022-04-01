@@ -1,0 +1,277 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --cor1: black;
+    --cor2: white;
+    --cor3: #5656f8;
+    --cor4: #97dbff;
+    --cor5: #ff7f50;
+    --cor6: #ff4603;
+    --cor7: #b9b9b9;
+    --fem: #e3aa95;
+    --male: #438383;
+}
+a{
+    color: var(--cor2);
+    text-decoration-line: none;
+}
+body{
+    background-color: black;
+}
+.bgimg{
+    background-image: url(https://www.amoviralata.com/wp-content/uploads/2021/01/vira-lata-sem-raca-definida.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-position: center;
+}
+
+/* navigation e header statico */
+
+header{
+    position: sticky;
+    top: 0; 
+}
+.header{
+    height: 55px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.623);
+    display: flex; /*transforma o header em um flex box para manipular o conteudo que está dentro */
+    flex-direction: row; /* define o primeiro eixo*/
+    justify-content: space-between; /* define a ordem dos itens*/
+    align-items: center; /*define a posição dos itens*/
+}
+.navbar{ /* aqui é onde ficam o "sobre/home/etc" que são elementos dentro de uma div*/
+    display: flex;
+    gap: 40px; /*serve para dar espaço de um para o outro*/
+    font-size: 1.4em;
+}
+.linksnav:hover{
+    color: var(--cor3);
+}
+.navgif{
+    height: 55px;
+}
+.botaonav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.botaoajude{
+    display: flex;
+    background-color: var(--cor3);
+    padding: 18.1px 50px;
+}
+.botaoajude:hover{
+    background-color: var(--cor6);
+}
+.logo{
+    padding-left: 10px;
+    color: var(--cor3);
+}
+.logo:hover{
+    transform: scale(1.2);
+    transition: 3s;
+}
+
+/* primeiro campo com conteudo */
+
+.maincampo { /*campo total como um body*/
+    margin: auto;
+    height : 700px;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.campoin{ /*campo interno que contem os conteudos*/
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+/* primeiras opções */
+.boxcp0{
+    display: flex;
+    height: 150px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.boxcp1,.boxcp2,.boxcp3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 34.3%;
+    height: 100%;
+}
+.boxcp1{
+    background-color: var(--cor7);
+}
+.boxcp2{
+    background-color: var(--cor4);
+}
+.boxcp3{
+    background-color: var(--cor5);
+}
+.h2boxcp{
+    font-size: 3em;
+    padding-bottom: 15px;
+}
+/* Alguns animais para adoção */
+
+.adoteaq{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.adoteaqcontainer{
+    display: flex;
+    flex: row;
+    justify-content: center;
+    gap: 10px 40px;
+}
+.tituloadote{
+    color: var(--cor2);
+    padding: 60px;
+}
+.animalimg{
+    width: 170px;
+    height: 170px;
+    border-radius: 100px;
+}
+.fem{
+    color: var(--fem);
+}
+.masc{
+    color: var(--male);
+}
+.vermaiscont{
+    margin: 80px;
+}
+.botaovermais1{
+    color: rgb(0, 0, 0);
+    margin: 40px;
+    padding: 10px 40px;
+    background-color: var(--cor2);
+    font-size:x-large ;
+}
+.botaovermais1:hover {
+    background-color: var(--cor3);
+    color: var(--cor2);
+}
+
+/* penultimo campo do site */
+
+.ultimocampo{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    max-height: 470px;
+}
+.imgapadrinharcont{
+    height: 470px;
+    min-height: 240px;
+}
+.imgcatdog{
+    height: 100%;
+    min-height: 240px;
+}
+.apadrinhartext{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--cor5);
+    text-align: center;
+    overflow: auto;
+}
+.tituloapadrinhar{
+    padding: 30px 40px;
+    font-size: 2.0em;
+    color: var(--cor2);
+}
+.apadrinharp{
+    padding: 40px 60px;
+    font-size: 1.3em;
+    color: var(--cor2);
+}
+.botaoapadrinhar{
+    margin: auto;
+    margin: auto;
+    color: var(--cor6);
+    padding: 10px 40px;
+    background-color: var(--cor2);
+    font-size:x-large ;
+}
+.botaoapadrinhar:hover{
+    background-color: var(--cor6);
+    color: var(--cor2);
+}
+h4{
+    color: var(--cor2);
+    font-size: 1.8em;
+}
+/* Campo vermelho ao final */
+
+.textovermelho{   /* frase */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: brown;
+    margin: auto;
+}
+.textovermelho>p,h3{
+    display: flex;
+    font-size: 1.5em;
+    padding: 70px 150px 10px 150px;
+    color: white;
+}
+.textovermelho > p{
+    min-width: 800px;
+}
+/* footer */
+
+footer{
+    background-color: var(--cor1);
+    color: var(--cor2);
+
+}
+.footerpai{
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.divcontatos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.4em;
+}
+/* .faceicon::before{
+    content: url();
+}
+.twittericon::before{
+    content: "";
+}
+.instagramicon::before{
+    content: "";
+} */
+.linksocialmedia:hover{
+    color: var(--cor3);
+}
+.textofinal{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
