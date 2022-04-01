@@ -15,7 +15,7 @@
     --male: #438383;
 }
 
-/* font */
+/* font family */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400&display=swap');
@@ -27,12 +27,13 @@
 .logo{
     font-family: 'Lobster', cursive;
 }
-.h2boxcp,.linksnav,.homenav,.tituloapadrinhar,.apadrinharp,.textovermelho,.finalfeliz,.botaofeliz,.botaoapadrinhar,.botaovermais1,.botaoajude{
+.h2boxcp,.linksnav,.homenav,.tituloapadrinhar,.apadrinharp,.textovermelho,.finalfeliz,.botaofeliz,.botaoapadrinhar,.botaovermais,.botaoajude,.felizp,.pboxcp{
     font-family: 'Roboto', sans-serif;
 }
 .tituloadote,.fem,.masc,.footerpai{
     font-family: 'Roboto Mono', monospace;
 }
+
 /* font */
 
 a{
@@ -160,6 +161,9 @@ header{
     padding-bottom: 15px;
     transition: 0.3s;
 }
+.pboxcp{
+    font-size: 1.2em;
+}
 .transparent:hover{
     color: var(--cor2a);
     transition: 0.3s;
@@ -197,14 +201,14 @@ header{
 .vermaiscont{
     margin: 80px;
 }
-.botaovermais1{
+.botaovermais{
     color: rgb(0, 0, 0);
     margin: 40px;
     padding: 10px 40px;
     background-color: var(--cor2);
     font-size:x-large ;
 }
-.botaovermais1:hover {
+.botaovermais:hover {
     background-color: var(--cor3);
     color: var(--cor2);
 }
@@ -233,9 +237,9 @@ header{
     text-align: center;
     overflow: auto;
 }
-.tituloapadrinhar{
+.tituloapadrinhar,.titulofeliz{
     padding: 30px 40px;
-    font-size: 2.0em;
+    font-size: 3.0em;
     color: var(--cor2);
 }
 .apadrinharp{
@@ -256,6 +260,7 @@ header{
     color: var(--cor2);
 }
 h4{
+    padding-top: 10px;
     color: var(--cor2);
     font-size: 1.8em;
 }
@@ -293,6 +298,7 @@ h4{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    text-align: center;
     background-color: var(--cor4);
     max-height: 470px;
     height: 470px;
@@ -303,6 +309,24 @@ h4{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 40px;
+}
+.felizp{
+    padding: 40px 60px;
+    font-size: 1.3em;
+    color: var(--cor2);
+}
+.botaofeliz{
+    margin: auto;
+    margin: auto;
+    color: var(--cor4);
+    padding: 10px 40px;
+    background-color: var(--cor2);
+    font-size:x-large ;
+}
+.botaofeliz:hover{
+    background-color: var(--cor3);
+    color: var(--cor2);
 }
 .imgfelizcont{
     max-height: 470px;
@@ -331,15 +355,15 @@ footer{
     gap: 10px;
     font-size: 1.4em;
 }
-/* .faceicon::before{
-    content: url();
+.faceicon::before{
+    content: '\00A0\1f44d';
 }
 .twittericon::before{
-    content: "";
+    content: '\00A0\1F426';
 }
 .instagramicon::before{
-    content: "";
-} */
+    content: '\00A0\1F4F8';
+}
 .linksocialmedia:hover{
     color: var(--cor3);
 }
@@ -347,4 +371,10 @@ footer{
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+a.linkedin::before {
+    content: '\00A0\1F517';
+}
+.linkedin:hover{
+    color: var(--cor6);
 }
