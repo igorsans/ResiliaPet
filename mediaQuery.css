@@ -1,30 +1,126 @@
+@media (min-width:425px) {
+.headermobile{
+    display: none;
+}
+}
 @media (max-width: 1171px) {
-.logo{
-    font-size: 2em;
+    .logo {
+        font-size: 2em;
+    }
+    .tituloapadrinhar{
+        font-size: 2em;
+        padding: 15px 20px;
+    }
+    .apadrinharp{
+        font-size: 1.2em;
+        padding: 20px 30px;
     }
 }
 
+/* tablet */
 
+@media (max-width: 900px) {
+    .logo {
+        font-size: 1.3em;
+    }
+    .navbar {
+        display: flex;
+        margin-right: 15px;
+    }
+    .botaonav {
+        display: none;
+    }
+    .h2boxcp {
+        font-size: 1.7em;
+    }
 
-@media (max-width: 768px) {
-.logo{
-    font-size: 1.3em;
-}
-.navbar{
-    display: flex;
-    margin-right: 15px;
-}
-.botaonav{
-    display: none;
-}
-.bgimg{
-    background-image: url(imagens/bgimg-m.jpg);
-}
-.h2boxcp{
-    font-size: 1.7em;
-}
-.pboxcp{
-    font-size: 1.1em;
+    .pboxcp {
+        font-size: 1.1em;
+        padding: 10px;
+    }
+
+    .ultimocampo {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .vermaiscont{
+        padding-bottom: 190px;
+    }
+    .botaoapadrinhar{
+        margin-bottom: 40px;
+    }
+    .imgapadrinharcont{
+        line-height: 0
+    }
 }
 
+/* mobile */
+
+@media (max-width: 425px) {
+    .header{
+        display: none;
+    }
+    .headermobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: white;
+        margin: auto;
+    }
+    .navmobile{
+        width: 100%;
+        padding: 10px 0px;
+    }
+    .navmobile2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .boxcp0{
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 100%;
+    }
+    .boxcp1,.boxcp2,.boxcp3{
+        width: 100%;
+    }
+    .h2boxcp{
+        padding-top: 20px;
+        text-decoration: underline;
+        text-decoration-color: rgba(255, 255, 255, 0.503);
+    }
+    .textovermelho{
+        display: none;
+    }
+    /* .imgapadrinharcont {
+        display: none;
+    } */
+    /* .imgfelizcont{
+        display: none;
+    } */
+    /* .maincampo{
+        display: none;
+    }*/
+    .finalfeliz{
+        display: flex;
+        flex-direction: column;
+    }
+    .imgfelizcont{
+        line-height: 0;
+        height: 100%;
+    }
+    footer{
+        margin-top: 140px;
+    }
+    .footerpai{
+        flex-direction: column;
+    }
+    .divcontatos{
+        font-size: 1.3em;
+    }
+    .textofinal{
+        padding-bottom: 50px;
+    }
 }

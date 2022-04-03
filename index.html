@@ -19,12 +19,26 @@
             <a class="homenav" href="#">Home</a>
             <a class="linksnav" href="#">Adote</a>
             <a class="linksnav" href="#">Agende uma visita</a>
-            <a class="linksnav" href="#"><span class="none">FAQ</a></a>
-            <a class="linksnav" href="#"><span class="none">Parceiros</span></a>
+            <a class="linksnav" href="#">FAQ</a>
+            <a class="linksnav" href="#">Parceiros</a>
         </nav>
         <div class="botaonav">
             <a class="botaoajude" href="">Ajude</a>
         </div>
+    </header>
+    <header class="headermobile">
+        <div class="logomobile">
+            <h1>Adote Aqui!</h1>
+        </div>
+        <div class="navmobile">
+            <nav class="navmobile2">
+            <a class="homenav" href="#">Adote</a>
+            <a class="linksnav" href="#">Agende uma visita</a>
+            <a class="linksnav" href="#">FAQ</a>
+            <a class="linksnav" href="#">Parceiros</a>
+            </nav>
+        </div>
+
     </header>
     <div class="maincampo">
         <div class="bgimg">
@@ -55,30 +69,22 @@
         <h2 class="tituloadote">A D O T E  A Q U I</h2>
 
         <div class="adoteaqcontainer">
-            <div><a href="teste"><img
-                        src="imagens/catfem1-m.jpg"
-                        alt="" class="animalimg"></a>
+            <div><a href="teste"><img src="imagens/catfem1-m.jpg" alt="" class="animalimg"></a>
                 <a href="">
                     <h4 class="fem">Thayline</h4>
                 </a>
             </div>
-            <div><a href=""><img
-                        src="imagens/dogmas1-m.jpg"
-                        alt="" class="animalimg"></a>
+            <div><a href=""><img src="imagens/dogmas1-m.jpg" alt="" class="animalimg"></a>
                 <a href="">
                     <h4 class="masc">Bruno</h4>
                 </a>
             </div>
-            <div><a href=""><img
-                        src="imagens/catmas1-m.jpg"
-                        alt="" class="animalimg"></a>
+            <div><a href=""><img src="imagens/catmas1-m.jpg" alt="" class="animalimg"></a>
                 <a href="">
                     <h4 class="masc">Gabriel</h4>
                 </a>
             </div>
-            <div><a href=""><img
-                        src="imagens/dogmas2-m.jpg"
-                        alt="" class="animalimg"></a>
+            <div><a href=""><img src="imagens/dogmas2-m.jpg" alt="" class="animalimg"></a>
                 <a href="">
                     <h4 class="masc">Everton</h4>
                 </a>
@@ -89,6 +95,7 @@
     <div class="ultimocampo">
         <div class="imgapadrinharcont">
             <picture>
+                <source media="(max-width: 425px)" srcset="imagens/catdog-p.jpg">
                 <source media="(max-width: 768px)" srcset="imagens/catdog-m.jpg">
                 <img src="./imagens/catdog-g.jpg" alt="Primeiro mascote do Android">
             </picture>
@@ -118,8 +125,12 @@
             </div>
         </div>
         <div class="imgfelizcont">
-            <img class="caofeliz" src="imagens/caramelo-g.jpg"
-                alt="">
+            <picture>
+                <source media="(max-width: 425px)" srcset="./imagens/caramelo-p.jpg">
+                <source media="(max-width: 768px)" srcset="./imagens/caramelo-m.jpg">
+                <img src="./imagens/caramelo-g.jpg" alt="Primeiro mascote do Android">
+            </picture>
+
         </div>
     </div>
     <footer>
@@ -139,9 +150,10 @@
                 <img src="imagens/dogfig-o.gif" alt="">
             </div>
             <div class="textofinal">
-                Este site foi criado para <br> fins educacionais por <a href="https://www.linkedin.com/in/igor-santos-91638b217/" class="linkedin" target="_blank">Igor
+                Este site foi criado para <br> fins educacionais por <a
+                    href="https://www.linkedin.com/in/igor-santos-91638b217/" class="linkedin" target="_blank">Igor
                     Santos.</a>
-                    <p class="frasefooter">"Amar, doar e construir!"</p>
+                <p class="frasefooter">"Amar, doar e construir!"</p>
             </div>
         </div>
     </footer>
