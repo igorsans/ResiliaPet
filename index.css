@@ -44,21 +44,12 @@ a{
 body{
     background-color: black;
 }
-.bgimg{
-    background-image: url(https://www.amoviralata.com/wp-content/uploads/2021/01/vira-lata-sem-raca-definida.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: local;
-    background-position: center;
-}
 
 /* navigation e header statico */
 
-header{
+.header{
     position: sticky;
     top: 0; 
-}
-.header{
     height: 90px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.623);
@@ -66,6 +57,9 @@ header{
     flex-direction: row; /* define o primeiro eixo*/
     justify-content: space-between; /* define a ordem dos itens*/
     align-items: center; /*define a posição dos itens*/
+}
+.logocont{
+    padding-left: 30px;
 }
 .navbar{ /* aqui é onde ficam o "sobre/home/etc" que são elementos dentro de uma div*/
     display: flex;
@@ -100,7 +94,6 @@ header{
     transition: 0.5s;
 }
 .logo{
-    padding-left: 30px;
     color: var(--cor2);
     transition: 4s;
     font-size: 4em;
@@ -113,13 +106,17 @@ header{
 
 /* primeiro campo com conteudo */
 
-.maincampo { /*campo total como um body*/
-    margin: auto;
-    height : 700px;
-    padding: 40px;
+.maincampo {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    background-image: url(imagens/bgimg-g.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    height: 500px;
 }
 .campoin{ /*campo interno que contem os conteudos*/
     height: 100%;
@@ -179,7 +176,7 @@ header{
 }
 .adoteaqcontainer{
     display: flex;
-    flex: row;
+    flex-flow: row wrap;
     justify-content: center;
     gap: 10px 40px;
 }
@@ -224,15 +221,12 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    width: 100%;
     max-height: 470px;
 }
-.imgapadrinharcont{
-    height: 470px;
-    min-height: 240px;
-}
-.imgcatdog{
-    height: 100%;
-    min-height: 240px;
+.imgpadrinharcont{
+    width: 100px;
+    height: 100px;
 }
 .apadrinhartext{
     display: flex;
@@ -285,9 +279,6 @@ h4{
     font-size: 1.5em;
     padding: 70px 150px 10px 150px;
     color: white;
-}
-.textovermelho > p{
-    min-width: 800px;
 }
 
 /* final feliz */

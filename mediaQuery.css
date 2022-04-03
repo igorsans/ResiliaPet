@@ -1,12 +1,30 @@
-@media (max-width: 760px) {
+@media (max-width: 1171px) {
 .logo{
-    display: none;
+    font-size: 2em;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+.logo{
+    font-size: 1.3em;
 }
 .navbar{
     display: flex;
-    flex-direction: column;
+    margin-right: 15px;
 }
-
-
+.botaonav{
+    display: none;
+}
+.bgimg{
+    background-image: url(imagens/bgimg-m.jpg);
+}
+.h2boxcp{
+    font-size: 1.7em;
+}
+.pboxcp{
+    font-size: 1.1em;
+}
 
 }
