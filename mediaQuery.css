@@ -91,18 +91,10 @@
         text-decoration: underline;
         text-decoration-color: rgba(255, 255, 255, 0.503);
     }
-    .textovermelho{
-        display: none;
+    .textovermelho > p,h3{
+        font-size: 1.2em;
+        padding: 30px;
     }
-    /* .imgapadrinharcont {
-        display: none;
-    } */
-    /* .imgfelizcont{
-        display: none;
-    } */
-    /* .maincampo{
-        display: none;
-    }*/
     .finalfeliz{
         display: flex;
         flex-direction: column;

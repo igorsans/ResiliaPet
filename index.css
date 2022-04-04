@@ -58,9 +58,6 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-.headermobile{
-    /* display: none; */
-}
 .logocont{
     padding-left: 30px;
 }
@@ -264,7 +261,7 @@ h4{
     color: var(--cor2);
     font-size: 1.8em;
 }
-/* Campo vermelho ao final */
+/* Campo vermelho */
 
 .textovermelho{   /* frase */
     background-color: brown;
